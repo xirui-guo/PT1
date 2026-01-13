@@ -1,0 +1,54 @@
+Star高：被很多人收藏
+License：避免引用他人代码时有法律问题
+Readme：markdown格式书写
+
+Branch 分支：
+方法1: 在github页面中加
+方法2:
+从当前节点新建分支：git checkout -b <branchname>
+回到住分支：               git checkout master
+列举所有的分支：        git branch
+切换到某个分支：        git checkout branchname>
+删掉某个分支：           git branch -D <branchname>
+合并分支（要回到master）：git merge <branchname>
+如果两个人前后脚对同一地方做了修改，且不确定谁的是对的，这时放弃这两个版本：git merge —abort
+
+git clone https://github.com/…
+如果是download zip file：需要在指定目录下，输入git init
+
+工作区->暂存区->仓库
+
+git add <file name>：
+工作区->暂存区
+Git add -A 把所有文件放到暂存区
+也可以直接在想上传的文件/整个“更改” folder后，点击“+”
+
+git commit：
+暂存区->仓库
+git commit -m “起个名表示这次提交改动了什么” ：把所有暂存区文件提交到仓库；第一次提交一般叫“first commit” 
+同上，要出入commit message再击“+”
+
+git config —global user.email “you@email.com”
+git config —global user.name “your name” 
+
+git log —stat：查看历史记录
+或者可以直接在左边的bar中找到“commit”，就可以看见之前的提交记录
+
+工作区打回去（没有提交到暂存区）：git checkout <file name> 也可以直接点击左侧bar的“回滚”
+暂存区回工作区：点击对应文件后的“-”
+提交后撤回： git reset HEAD^1 (把当前的上一次提交打回到工作区)
+
+ 如果是提交后过了很久，中间也做了其他修改，想回到之前某一版文件：
+1. 在左边“bar”中找到file history
+2. 之间把对应的内容复制，再粘贴回现在的文件中来修改
+
+推送：
+git push
+当push an existing repository from the command line:
+1. git remote add origin <当前repository完整的网址：https://github.com/......git>
+2. git branch -M main
+3. git push -u origin main
+
+拉取：
+git pull
+
