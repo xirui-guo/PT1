@@ -1,0 +1,12 @@
+npm create vite@latest vibe-coding-lab1 -- --template react
+
+cd vibe-coding-lab1
+
+手动替换代码
+这一步最为关键。你需要把你上传给我的 frontend.jsx 内容放进项目里：
+使用你的代码编辑器（如 VS Code）打开 vibe-coding-lab1 文件夹。
+在左侧文件树中找到 src 文件夹，打开里面的 App.jsx。
+清空该文件中的所有默认内容。
+将你的 frontend.jsx 全部内容复制并粘贴进去，然后保存文件。
+
+npm run dev
